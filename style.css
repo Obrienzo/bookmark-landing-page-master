@@ -2,6 +2,208 @@ html {
     font-size: 62.5%;
 }
 
+*::before,
+*::after,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 img {
     max-width: 100%;
+    object-fit: cover;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+:root {
+    --soft-blue: hsl(231, 69%, 60%);
+    --soft-red: hsl(0, 94%, 66%);
+    --grayish-blue: hsl(229, 8%, 60%);
+    --very-dark-blue: hsl(229, 31%, 21%);
+}
+
+body {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    background-color: white;
+    position: relative;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    padding: 2.2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active {
+    display: none;
+}
+
+.navigation-links {
+    display: none;
+}
+
+.hero-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: end;
+    padding: 2.2rem;
+}
+
+.hero-page img {
+    margin-bottom: 3.5rem;
+}
+
+h1 {
+    margin-bottom: 2.2rem;
+}
+
+.cta-group {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.0em;
+}
+
+.cta {
+    border: 1px solid;
+    border-radius: 0.8rem;
+    padding: 1.2rem 0.8rem;
+}
+
+
+
+
+
+.features {
+    padding: 5.8rem 2.2rem;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1.8rem;
+}
+
+.features p {
+    margin-bottom: 3.8rem;
+}
+
+.features-sections {
+    border-top: 0.1rem solid var(--grayish-blue);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4.8rem;
+}
+
+.features-sections button {
+    padding: 1.5rem 0;
+    border-bottom: 0.1rem solid var(--grayish-blue);
+    position: relative;
+}
+
+.features-sections .selected::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 45%;
+    height: 0.29rem;
+    background-color: var(--soft-red);
+}
+
+
+
+
+
+/* Jumped a section... */
+
+
+
+
+
+.download-extension {
+    text-align: center;
+    margin: 6.8rem 2.2rem;
+}
+
+.browser-selection-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.browser-selection-group article {
+    width: 28.0rem;
+    box-shadow: 0 0.05rem 2.2rem gainsboro;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.browser-selection-group img {
+    margin-bottom: 2.5rem;
+}
+
+.browser-selection-group h4 {
+    margin-bottom: 1.0rem;
+}
+
+.browser-selection-group section {
+    background-image: url('images/bg-dots.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 3.5rem;
+}
+
+.browser-selection-group button {
+    margin: 2.5rem;
+}
+
+
+
+
+
+.questions-section {
+    /* padding: 5.8rem 2.2rem; */
+    text-align: center;
+}
+
+.questions-section section {
+    margin-top: 4.8rem;
+}
+
+.questions-section article {
+    border-bottom: 0.1rem solid var(--grayish-blue);
+}
+
+.questions-section div {
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.questions-section button {
+    margin-top: 4.5rem;
 }
