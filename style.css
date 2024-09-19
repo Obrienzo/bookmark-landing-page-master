@@ -184,26 +184,26 @@ h2 {
 
 
 
-.questions-section {
+.questions {
     /* padding: 5.8rem 2.2rem; */
     text-align: center;
 }
 
-.questions-section section {
+.questions section {
     margin-top: 4.8rem;
 }
 
-.questions-section article {
+.questions article {
     border-bottom: 0.1rem solid var(--grayish-blue);
 }
 
-.questions-section div {
+.questions div {
     text-align: start;
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 0;
 }
 
-.questions-section button {
+.questions button {
     margin-top: 4.5rem;
 }
