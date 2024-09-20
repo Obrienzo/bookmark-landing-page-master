@@ -10,6 +10,10 @@ html {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 img {
     max-width: 100%;
     object-fit: cover;
@@ -23,6 +27,15 @@ button {
 
 ul {
     list-style-type: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+input:focus {
+    border: none;
 }
 
 :root {
@@ -80,13 +93,20 @@ h1 {
 .cta-group {
     margin-top: 2.5rem;
     display: flex;
+    justify-content: center;
     gap: 1.0em;
 }
 
 .cta {
-    border: 1px solid;
+    /* border: 1px solid; */
     border-radius: 0.8rem;
-    padding: 1.2rem 0.8rem;
+    padding: 1.2rem 0.95rem;
+    background-color: gainsboro;
+}
+
+.cta--blue {
+    background-color: var(--soft-blue);
+    color: white;
 }
 
 
@@ -185,12 +205,12 @@ h2 {
 
 
 .questions {
-    /* padding: 5.8rem 2.2rem; */
+    padding: 5.8rem 2.2rem;
     text-align: center;
 }
 
 .questions section {
-    margin-top: 4.8rem;
+    margin: 4.8rem 0;
 }
 
 .questions article {
@@ -201,9 +221,50 @@ h2 {
     text-align: start;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1.5rem 0;
 }
 
-.questions button {
-    margin-top: 4.5rem;
+
+
+
+
+.register-section {
+    display: block;
+    background-color: var(--soft-blue);
+    text-align: center;
+    color: white;
+    margin: 6.8rem 0;
+    padding: 5.4rem 2.2rem;
+}
+
+.cta--orange {
+    background-color: var(--soft-red);
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 1.2rem 0.8rem;
+    border-radius: 0.8rem;
+}
+
+input::placeholder {
+    opacity: 0.5;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--very-dark-blue);
+    color: white;
+}
+
+footer a svg {
+    fill: white;
 }
