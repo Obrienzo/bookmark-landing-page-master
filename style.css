@@ -16,7 +16,6 @@ a {
 
 img {
     max-width: 100%;
-    object-fit: cover;
 }
 
 button {
@@ -49,13 +48,18 @@ body {
     font-size: 1.8rem;
     line-height: 1.5;
     background-color: white;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
     position: relative;
 }
 
+.container {
+    margin: 2.0rem;
+}
+
 header {
-    position: absolute;
-    width: 100%;
-    padding: 2.2rem;
+    margin: 2.2rem 2.2rem 0 2.2rem;
 }
 
 nav {
@@ -73,21 +77,32 @@ nav {
 }
 
 .hero-page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 4.8rem;
     text-align: center;
-    justify-content: end;
-    padding: 2.2rem;
+    position: relative;
 }
 
-.hero-page img {
-    margin-bottom: 3.5rem;
+.banner::after {
+    content: '';
+    position: absolute;
+    z-index: -100;
+    background-color: var(--soft-blue);
+    width: 100%;
+    height: 100%;
+    top: 2.5rem;
+    border-radius: 100% 0 0 100%;
+    right: -2.5rem;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.8rem;
+    position: relative;
 }
 
 h1 {
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.8rem;
 }
 
 .cta-group {
@@ -99,8 +114,8 @@ h1 {
 
 .cta {
     /* border: 1px solid; */
-    border-radius: 0.8rem;
-    padding: 1.2rem 0.95rem;
+    border-radius: 0.6rem;
+    padding: 1.2rem 2.2rem;
     background-color: gainsboro;
 }
 
@@ -114,12 +129,13 @@ h1 {
 
 
 .features {
-    padding: 5.8rem 2.2rem;
     text-align: center;
+    margin-top: 5.5rem;
+    /* position: relative; */
 }
 
 h2 {
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.5rem;
 }
 
 .features p {
@@ -151,6 +167,33 @@ h2 {
     background-color: var(--soft-red);
 }
 
+.features-sections--display {
+    display: flex;
+    flex-direction: column;
+    gap: 5.0rem;
+    position: relative;
+}
+
+h3 {
+    margin-bottom: 1.4rem;
+}
+
+.features-sections--display button {
+    display: none;
+}
+
+.features-sections--display::after {
+    content: '';
+    position: absolute;
+    z-index: -100;
+    background-color: var(--soft-blue);
+    width: 100%;
+    height: 45%;
+    top: 3.5rem;
+    border-radius: 0 100%  100% 0;
+    left: -5.0rem;
+}
+
 
 
 
@@ -163,7 +206,7 @@ h2 {
 
 .download-extension {
     text-align: center;
-    margin: 6.8rem 2.2rem;
+    margin-top: 6.8rem;
 }
 
 .browser-selection-group {
@@ -171,6 +214,12 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2.5rem;
+    margin-top: 5.0rem;
+}
+
+.browser-selection-group p {
+    color: var(--grayish-blue);
+    font-size: 1.5rem;
 }
 
 .browser-selection-group article {
@@ -187,6 +236,7 @@ h2 {
 
 .browser-selection-group h4 {
     margin-bottom: 1.0rem;
+    font-size: 2.2rem;
 }
 
 .browser-selection-group section {
@@ -205,7 +255,7 @@ h2 {
 
 
 .questions {
-    padding: 5.8rem 2.2rem;
+    margin-top: 6.8rem;
     text-align: center;
 }
 
@@ -230,12 +280,22 @@ h2 {
 
 
 .register-section {
-    display: block;
     background-color: var(--soft-blue);
     text-align: center;
     color: white;
-    margin: 6.8rem 0;
-    padding: 5.4rem 2.2rem;
+    margin-top: 7.8rem;
+    padding: 5.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-section h2 {
+    line-height: 1.0;
+}
+
+.register-section span {
+    font-weight: 400;
 }
 
 .cta--orange {
@@ -260,11 +320,33 @@ input::placeholder {
 }
 
 footer {
-    text-align: center;
     background-color: var(--very-dark-blue);
-    color: white;
+    display: grid;
+    place-content: center;
 }
 
-footer a svg {
-    fill: white;
+footer a {
+    color: whitesmoke;
+}
+
+footer .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.wrapper:nth-child(1) ul {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
 }
