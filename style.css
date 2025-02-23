@@ -22,6 +22,7 @@ button {
     background-color: transparent;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 ul {
@@ -56,6 +57,7 @@ body {
 
 .container {
     margin: 2.0rem;
+    max-width: 112.8rem;
 }
 
 header {
@@ -127,11 +129,16 @@ h1 {
 
 
 
-
-.features {
+.features,
+.hero-page,
+.download-extension,
+.questions-section,
+.register-section {
     text-align: center;
     margin-top: 5.5rem;
-    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
@@ -224,6 +231,7 @@ h3 {
 
 .browser-selection-group article {
     width: 28.0rem;
+    height: fit-content;
     box-shadow: 0 0.05rem 2.2rem gainsboro;
     border-radius: 1.2rem;
     display: flex;
@@ -254,8 +262,11 @@ h3 {
 
 
 
-.questions {
+.questions-section {
     margin-top: 6.8rem;
+}
+
+.questions {
     text-align: center;
 }
 
@@ -307,6 +318,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    margin-top: 2.5rem;
 }
 
 input {
@@ -321,8 +333,11 @@ input::placeholder {
 
 footer {
     background-color: var(--very-dark-blue);
-    display: grid;
-    place-content: center;
+    padding: 2.2rem;
+}
+
+footer .container {
+    margin: 0;
 }
 
 footer a {
@@ -336,7 +351,7 @@ footer .wrapper {
     gap: 2.5rem;
 }
 
-.wrapper:nth-child(1) ul {
+.site-map {
     margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
@@ -349,4 +364,150 @@ footer .wrapper {
     display: flex;
     gap: 2.5rem;
     align-items: center;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .navigation-links {
+        display: flex;
+        gap: 2.5rem;
+        align-items: center;
+    }
+
+    .navigation-links a {
+        text-transform: uppercase;
+        color: var(--grayish-blue);
+    }
+
+    .dropdown-buttons {
+        display: none;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 5.2rem;
+        margin: auto;
+        text-align: start;
+    }
+
+    .content {
+        flex: 1;
+    }
+
+    .cta-group {
+        justify-content: flex-start;
+    }
+
+    .banner::after {
+        display: none;
+    }
+
+
+
+
+
+    .features-content,
+    .download-content,
+    .questions {
+        margin: auto;
+    }
+
+    .container-medium  {
+        max-width: 74.4rem;
+        margin: auto;
+    }
+
+    .container-small {
+        margin: auto;
+        max-width: 52.2rem;
+    }
+
+    .features-sections {
+        flex-direction: row;
+        justify-content: center;
+        gap: 5.2rem;
+        border-top: 0;
+        border-bottom: 0.1rem solid var(--grayish-blue);
+    }
+
+    .features-sections .selected::after {
+        width: 100%;
+    }
+
+    .features-sections button {
+        border-bottom: 0;
+        padding: 1.5rem;
+    }
+
+    .features-sections--display {
+        flex-direction: row;
+        gap: 5.2rem;
+        text-align: start;
+        align-items: center;
+    }
+
+    .features-sections--display .cta {
+        display: block;
+    }
+
+    .features-sections--display section {
+        flex: 1;
+    }
+
+    .features-sections--display::after {
+        display: none;
+    }
+
+
+
+
+
+
+    .browser-selection-group article:nth-child(2) {
+        margin-top: 2.8rem;
+    }
+
+    .browser-selection-group article:nth-child(3) {
+        margin-top: 5.6rem;
+    }
+
+
+
+
+
+
+    form {
+        flex-direction: row;
+    }
+
+    form div {
+        display: block;
+        flex: 1;
+    }
+
+    footer .wrapper {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .wrapper section:nth-child(1) {
+        display: flex;
+        gap: 3.8rem;
+        align-items: center;
+        flex: 1;
+    }
+
+    .site-map {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+    }
 }
