@@ -1,5 +1,5 @@
-import Button from "./Button.jsx";
-import ExtensionCard from "./ExtensionCard.jsx";
+import Button from "../components/Button.jsx";
+import ExtensionCard from "../components/ExtensionCard.jsx";
 
 function Extension() {
     return (

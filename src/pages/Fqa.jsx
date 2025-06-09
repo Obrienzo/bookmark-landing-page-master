@@ -1,5 +1,5 @@
-import Button from "./Button.jsx";
-import Question from "./Question.jsx";
+import Button from "../components/Button.jsx";
+import Question from "../components/Question.jsx";
 
 function Fqa() {
     return (

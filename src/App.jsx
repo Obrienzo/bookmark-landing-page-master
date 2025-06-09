@@ -1,10 +1,10 @@
-import Navigation from "./Navigation.jsx";
-import HeroPage from "./HeroPage.jsx";
-import Features from "./Features.jsx";
-import Extension from "./Extension.jsx";
-import Fqa from "./Fqa.jsx";
-import Form from "./Form.jsx";
-import Footer from "./Footer.jsx";
+import Navigation from "./pages/Navigation.jsx";
+import HeroPage from "./pages/HeroPage.jsx";
+import Features from "./pages/Features.jsx";
+import Extension from "./pages/Extension.jsx";
+import Fqa from "./pages/Fqa.jsx";
+import Form from "./pages/Form.jsx";
+import Footer from "./pages/Footer.jsx";
 
 function App() {
 
