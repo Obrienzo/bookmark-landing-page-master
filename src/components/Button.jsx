@@ -1,5 +1,5 @@
 
-function Button({ color, bckgColor, children, isWide=false, onClick=null }) {
+function Button({ color, bckgColor, children, border, isWide=false, onClick=null }) {
     return (
         <button 
             onClick={onClick} 
@@ -7,6 +7,7 @@ function Button({ color, bckgColor, children, isWide=false, onClick=null }) {
             style={{
                 color: color,
                 backgroundColor: bckgColor,
+                border: border
             }}
         >
             {children}

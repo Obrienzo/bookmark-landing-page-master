@@ -1,28 +1,7 @@
 import Button from "../components/Button.jsx";
 
-const featuresList = [
-    {
-        tab: 1,
-        title: 'Bookmark in one click',
-        illustration: '/src/assets/images/illustration-features-tab-1.svg',
-        description: 'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.'
-    },
-    {
-        tab: 2,
-        title: 'Intelligent search',
-        illustration: '/src/assets/images/illustration-features-tab-2.svg',
-        description: 'Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.'
-    },
-    {
-        tab: 3,
-        title: 'Share your bookmarks',
-        illustration: '/src/assets/images/illustration-features-tab-3.svg',
-        description: 'Easly share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.'
-    }
-];
+function Features({ feature, handleDisplay }) {
 
-
-function Features() {
     return (
         <section className="min-h-screen">
             <div className="p-5">
@@ -35,23 +14,33 @@ function Features() {
                 <div className="mt-10">
                     <ul className="flex flex-col text-center">
                         <li className="border-b border-t border-zinc-200">
-                            <Button>
+                            <Button onClick={() => handleDisplay(0)}>
                                 Simple Bookmark
                             </Button>
                         </li>
                         <li className="border-b border-zinc-200">
-                            <Button>
+                            <Button onClick={() => handleDisplay(1)}>
                                 Speedy Searching
                             </Button>
                         </li>
                         <li className="border-b border-zinc-200">
-                            <Button>
+                            <Button onClick={() => handleDisplay(2)}>
                                 Easy Sharing
                             </Button>
                         </li>
                     </ul>
-                    <div>
-                        {/* Create a component displaying the adequate data for each of the above buttons... */}
+                    <div className="mt-12">
+                        <div className="flex justify-center">
+                            <img src={feature.illustration} alt="feature illustration" />
+                        </div>
+                        <div className="mt-12">
+                            <h4 className="mb-6 text-center">
+                                {feature.title}
+                            </h4>
+                            <p className="text-center">
+                                {feature.description}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
