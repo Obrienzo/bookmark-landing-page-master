@@ -1,9 +1,10 @@
 import Button from "../components/Button.jsx";
+import Selected from "../components/Selected.jsx";
 
-function Features({ feature, handleDisplay }) {
+function Features({ feature, handleDisplay, selected, handleSelection }) {
 
     return (
-        <section className="min-h-screen">
+        <section className="py-12">
             <div className="p-5">
                 <div className="text-center"> 
                     <h2 className="text-2xl mb-5">Features</h2>
@@ -13,20 +14,41 @@ function Features({ feature, handleDisplay }) {
                 </div>
                 <div className="mt-10">
                     <ul className="flex flex-col text-center">
-                        <li className="border-b border-t border-zinc-200">
-                            <Button onClick={() => handleDisplay(0)}>
+                        <li className="border-b border-t border-zinc-200 relative">
+                            <Button onClick={() => {
+                                handleDisplay(0)
+                                handleSelection(1)
+                            }}>
                                 Simple Bookmark
                             </Button>
+                            <Selected
+                                selected={selected}
+                                value={1}
+                            />
                         </li>
-                        <li className="border-b border-zinc-200">
-                            <Button onClick={() => handleDisplay(1)}>
+                        <li className="border-b border-zinc-200 relative">
+                            <Button onClick={() => {
+                                handleDisplay(1)
+                                handleSelection(2)
+                            }}>
                                 Speedy Searching
                             </Button>
+                            < Selected
+                                selected={selected}
+                                value={2}
+                            />
                         </li>
-                        <li className="border-b border-zinc-200">
-                            <Button onClick={() => handleDisplay(2)}>
+                        <li className="border-b border-zinc-200 relative">
+                            <Button onClick={() => {
+                                handleDisplay(2)
+                                handleSelection(3)
+                            }}>
                                 Easy Sharing
                             </Button>
+                            <Selected
+                                selected={selected}
+                                value={3}
+                            />
                         </li>
                     </ul>
                     <div className="mt-12">
