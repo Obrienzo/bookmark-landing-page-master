@@ -3,15 +3,15 @@ import ExtensionCard from "../components/ExtensionCard.jsx";
 
 function Extension() {
     return (
-        <section className="min-h-screen">
-            <div className="p-5 pb-20">
-                <div className="mb-10 text-center">
-                    <h2 className="text-2xl mb-5">Download the extension</h2>
+        <section className="flex justify-center items-center">
+            <div className="p-5 py-20 max-w-5xl">
+                <div className="mb-10 text-center max-w-2xl mx-auto">
+                    <h2 className="text-3xl mb-5 font-bold">Download the extension</h2>
                     <p>
                         We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.
                     </p>
                 </div>
-                <div className="flex flex-col gap-3.5">
+                <div className="flex flex-col gap-3.5 mt-14 md:grid md:grid-cols-3 md:gap-6">
                     <ExtensionCard
                         bwsLogo='/src/assets/images/logo-chrome.svg'
                         bwsName='Chrome'

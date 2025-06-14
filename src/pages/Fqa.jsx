@@ -3,15 +3,15 @@ import Question from "../components/Question.jsx";
 
 function Fqa() {
     return (
-        <section className="py-12">
-            <div className="p-5 text-center">
+        <section className="py-12 flex justify-center items-center">
+            <div className="p-5 text-center max-w-2xl">
                 <div>
-                    <h2 className="text-2xl mb-5">Frequently Asked Questions</h2>
+                    <h2 className="text-3xl mb-5 font-bold">Frequently Asked Questions</h2>
                     <p>
                         Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
                     </p>
                 </div>
-                <div className="my-10">
+                <div className="my-10 md:my-16">
                     <Question
                         question='What is Bookmark'
                     />

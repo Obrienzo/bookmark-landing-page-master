@@ -30,9 +30,16 @@ function App() {
     }
   ];
 
+  const expandContent = 'Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa. ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa. ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa. ultricies non ligula. Suspendisse imperdiet.';
+
   const [dropdown, setDropdown] = useState(false);
   const [ feature, setFeature ] = useState(featuresList[0]);
   const [ selected, setSelected ] = useState(1);
+
+  const handleDropdown = () => {
+    setDropdown(prevState => !prevState);
+    console.log(dropdown);
+  }
 
   const changeDisplay = (number) => {
     setFeature(featuresList[number]);
@@ -49,14 +56,15 @@ function App() {
   return (
     // Remember to apply some styling to stop the scrolling of the page when the dropdown menu is open...
     <div className={`relative ${dropdown ? '' : ''}`}>
-      <div className={`${dropdown ? 'absolute z-20 top-0 left-0 h-screen w-screen bg-zinc-600 opacity-90' : 'hidden'}`}></div>
-      <header className="absolute w-full z-30">
+      <div className={`${dropdown ? 'absolute z-20 top-0 left-0 h-screen w-full bg-zinc-600 opacity-90' : 'hidden'}`}></div>
+      <header className="bg-white">
         <Navigation
           dropdown={dropdown}
           setDropdown={setDropdown}
+          handleDropdown={handleDropdown}
         />
       </header>
-      <main>
+      <main className="overflow-hidden">
         <HeroPage />
         <Features
           feature={feature}

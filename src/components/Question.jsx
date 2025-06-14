@@ -11,7 +11,7 @@ function Question({ question }) {
         <div className="border-b-2 border-zinc-200 py-3">
             <button 
                 onClick={handleExpand}
-                className="flex items-center justify-between w-full"
+                className="flex items-center justify-between w-full cursor-pointer"
             >
                 <p>{question}?</p>
                 <img className={`${expand ? 'rotate-180' : 'rotate-0'}`} src="/src/assets/images/icon-arrow.svg" alt="arrow icon" />
