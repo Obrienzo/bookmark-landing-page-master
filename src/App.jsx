@@ -35,6 +35,7 @@ function App() {
   const [dropdown, setDropdown] = useState(false);
   const [ feature, setFeature ] = useState(featuresList[0]);
   const [ selected, setSelected ] = useState(1);
+  const [error, setError] = useState(false);
 
   const handleDropdown = () => {
     setDropdown(prevState => !prevState);
@@ -48,6 +49,11 @@ function App() {
   const handleSelection = (value) => {
     setSelected(value);
   }
+
+  function handleSubmitEvent(event) {
+        event.preventDefault();
+        console.log(event.target.elements.email.value);
+    }
 
   
 

@@ -38,9 +38,7 @@ function Navigation({ dropdown, handleDropdown }) {
                         </div>
                         <div className="hidden md:block">
                             <Button
-                                color='white'
-                                bckgColor='orangered'
-                                isWide={true}
+                                variant='red'
                             >
                                 LOGIN
                             </Button>

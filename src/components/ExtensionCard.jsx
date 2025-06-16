@@ -19,8 +19,7 @@ function ExtensionCard({ bwsLogo, bwsName, version, bckg }) {
                 <div className="p-5">
                     <Button
                         onClick={handleExtension}
-                        color='hsl(0, 0%, 97%)'
-                        bckgColor='hsl(231, 69%, 60%)'
+                        variant='blue'
                         isWide={true}
                     >
                         Add & Install Extension

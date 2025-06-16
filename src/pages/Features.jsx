@@ -15,10 +15,13 @@ function Features({ feature, handleDisplay, selected, handleSelection }) {
                 <div className="mt-10">
                     <ul className="flex flex-col text-center max-w-2xl mx-auto md:grid md:grid-cols-3">
                         <li className="border-b border-t md:border-t-0 border-zinc-200 relative">
-                            <Button onClick={() => {
-                                handleDisplay(0)
-                                handleSelection(1)
-                            }}>
+                            <Button 
+                                onClick={() => {
+                                    handleDisplay(0)
+                                    handleSelection(1)
+                                }}
+                                variant='ghost'
+                            >
                                 Simple Bookmark
                             </Button>
                             <Selected
@@ -27,10 +30,13 @@ function Features({ feature, handleDisplay, selected, handleSelection }) {
                             />
                         </li>
                         <li className="border-b border-zinc-200 relative">
-                            <Button onClick={() => {
-                                handleDisplay(1)
-                                handleSelection(2)
-                            }}>
+                            <Button 
+                                onClick={() => {
+                                    handleDisplay(1)
+                                    handleSelection(2)
+                                }}
+                                variant='ghost'
+                            >
                                 Speedy Searching
                             </Button>
                             < Selected
@@ -39,10 +45,13 @@ function Features({ feature, handleDisplay, selected, handleSelection }) {
                             />
                         </li>
                         <li className="border-b border-zinc-200 relative">
-                            <Button onClick={() => {
-                                handleDisplay(2)
-                                handleSelection(3)
-                            }}>
+                            <Button 
+                                onClick={() => {
+                                    handleDisplay(2)
+                                    handleSelection(3)
+                                }}
+                                variant='ghost'
+                            >
                                 Easy Sharing
                             </Button>
                             <Selected
@@ -64,10 +73,7 @@ function Features({ feature, handleDisplay, selected, handleSelection }) {
                                 {feature.description}
                             </p>
                             <div className="hidden md:block mt-10">
-                                <Button
-                                    color='hsl(0, 0%, 97%)'
-                                    bckgColor='hsl(231, 69%, 60%)'
-                                >
+                                <Button variant='blue'>
                                     More info
                                 </Button>
                             </div>

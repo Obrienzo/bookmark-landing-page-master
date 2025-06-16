@@ -25,10 +25,7 @@ function Fqa() {
                         question='What about other Chromium browsers'
                     />
                 </div>
-                <Button
-                    color='hsl(0, 0%, 97%)'
-                    bckgColor='hsl(231, 69%, 60%)'
-                >
+                <Button variant='blue'>
                     More info
                 </Button>
             </div>

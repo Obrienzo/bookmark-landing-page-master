@@ -17,13 +17,10 @@ function Form() {
 
                 <div className="flex flex-col gap-2 mt-4 md:mt-8 md:flex-row md:justify-center items-center w-full">
                     <p className="flex flex-col grow">
-                        <input type="email" name="email" id="email" placeholder="Enter your email address" className={`bg-amber-50 rounded-md placeholder-gray-400 p-3 text-zinc-800 ${error ? 'border-4 border-red-500' : ''}`} />
+                        <input type="email" name="email" id="email" placeholder="Enter your email address" className={`bg-amber-50 rounded-md placeholder-gray-400 p-2 text-zinc-800 ${error ? 'border-4 border-red-500' : ''}`} />
                         {error ? <span className="text-start text-xs p-1 italic text-slate-50 bg-red-500 rounded-b-md relative -top-1">Whoops, make sure it's an email</span> : null}
                     </p>
-                    <Button
-                        color='white'
-                        bckgColor='orangered'
-                    >
+                    <Button variant='red'>
                         Contact Us
                     </Button>
                 </div>

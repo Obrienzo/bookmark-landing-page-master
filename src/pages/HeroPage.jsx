@@ -14,16 +14,10 @@ function HeroPage() {
                         A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
                     </p>
                     <div className="hero-btn flex flex-wrap justify-center md:justify-start gap-2.5 mt-5 lg:mt-8">
-                        <Button
-                           color='hsl(0, 0%, 97%)'
-                           bckgColor='hsl(231, 69%, 60%)'
-                        >
+                        <Button variant='blue'>
                             Get it on Chrome
                         </Button>
-                        <Button
-                           color='hsl(229, 31%, 21%)'
-                           bckgColor='hsl(0, 0%, 97%)'
-                        >
+                        <Button variant='grey'>
                             Get it on Firefox
                         </Button>
                     </div>
