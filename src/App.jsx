@@ -57,7 +57,7 @@ function App() {
     // Remember to apply some styling to stop the scrolling of the page when the dropdown menu is open...
     <div className={`relative ${dropdown ? '' : ''}`}>
       <div className={`${dropdown ? 'absolute z-20 top-0 left-0 h-screen w-full bg-zinc-600 opacity-90' : 'hidden'}`}></div>
-      <header>
+      <header className="p-5">
         <Navigation
           dropdown={dropdown}
           setDropdown={setDropdown}

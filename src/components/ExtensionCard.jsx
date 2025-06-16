@@ -7,9 +7,9 @@ function ExtensionCard({ bwsLogo, bwsName, version, bckg }) {
     }
 
     return (
-        <article className="shadow-xl rounded-lg">
+        <article className="h-fit max-w-96 mx-auto shadow-xl rounded-lg">
             <div>
-                <div className="bg-no-repeat bg-bottom bg-contain pt-14 pb-8 text-center" style={{
+                <div className="bg-no-repeat bg-bottom bg-contain pt-14 pb-8 md:px-16 text-center" style={{
                 backgroundImage: `url(${bckg})`
                 }}>
                     <img src={bwsLogo} alt={bwsName} className="mx-auto" />

@@ -4,7 +4,7 @@ import Button from "../components/Button.jsx";
 function Navigation({ dropdown, handleDropdown }) {
 
     return (
-        <nav className="relative z-30 max-w-5xl p-5 md:flex md:items-center md:justify-between mx-auto">
+        <nav className="relative z-30 max-w-5xl md:flex md:items-center md:justify-between mx-auto">
             <div className="absolute md:relative z-30 w-full md:w-fit flex justify-between items-center">
                 <div>
                     <a href="/index.html">
