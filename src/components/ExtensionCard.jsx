@@ -7,14 +7,14 @@ function ExtensionCard({ bwsLogo, bwsName, version, bckg }) {
     }
 
     return (
-        <article>
-            <div className="w-80 shadow-xl rounded-lg">
+        <article className="shadow-xl rounded-lg">
+            <div>
                 <div className="bg-no-repeat bg-bottom bg-contain pt-14 pb-8 text-center" style={{
                 backgroundImage: `url(${bckg})`
                 }}>
                     <img src={bwsLogo} alt={bwsName} className="mx-auto" />
                     <h3 className="text-2xl mt-8 mb-2 font-medium">Add to {bwsName}</h3>
-                    <p>{version}</p>
+                    <p className="text-zinc-400">{version}</p>
                 </div>
                 <div className="p-5">
                     <Button

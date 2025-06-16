@@ -4,14 +4,15 @@ import ExtensionCard from "../components/ExtensionCard.jsx";
 function Extension() {
     return (
         <section className="flex justify-center items-center">
-            <div className="p-5 py-20 max-w-5xl">
+            <div className="p-5 py-20 md:py-40 max-w-5xl">
                 <div className="mb-10 text-center max-w-2xl mx-auto">
                     <h2 className="text-3xl mb-5 font-bold">Download the extension</h2>
-                    <p>
+                    <p className="text-zinc-400">
                         We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.
                     </p>
                 </div>
-                <div className="flex flex-col gap-3.5 mt-14 md:grid md:grid-cols-3 md:gap-6">
+                {/* To be back on styling the ExtensionCard component*/}
+                <div className="extensions flex flex-wrap gap-3.5 mt-14">
                     <ExtensionCard
                         bwsLogo='/src/assets/images/logo-chrome.svg'
                         bwsName='Chrome'
