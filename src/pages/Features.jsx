@@ -21,6 +21,8 @@ function Features({ feature, handleDisplay, selected, handleSelection }) {
                                     handleSelection(1)
                                 }}
                                 variant='ghost'
+                                active={1}
+                                selected={selected}
                             >
                                 Simple Bookmark
                             </Button>
@@ -36,6 +38,8 @@ function Features({ feature, handleDisplay, selected, handleSelection }) {
                                     handleSelection(2)
                                 }}
                                 variant='ghost'
+                                active={2}
+                                selected={selected}
                             >
                                 Speedy Searching
                             </Button>
@@ -51,6 +55,8 @@ function Features({ feature, handleDisplay, selected, handleSelection }) {
                                     handleSelection(3)
                                 }}
                                 variant='ghost'
+                                active={3}
+                                selected={selected}
                             >
                                 Easy Sharing
                             </Button>
