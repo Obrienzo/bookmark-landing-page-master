@@ -61,7 +61,7 @@ function App() {
 
   return (
     // Remember to apply some styling to stop the scrolling of the page when the dropdown menu is open...
-    <div className={`relative ${dropdown ? '' : ''}`}>
+    <div className="font-rubik font-normal">
       <div className={`${dropdown ? 'absolute z-20 top-0 left-0 h-screen w-full bg-zinc-600 opacity-90' : 'hidden'}`}></div>
       <header className="p-5">
         <Navigation
@@ -80,7 +80,10 @@ function App() {
         />
         <Extension />
         <Fqa />
-        <Form />
+        <Form
+          error={error}
+          handleSubmitEvent={handleSubmitEvent}
+        />
         <Footer />
       </main>
     </div>

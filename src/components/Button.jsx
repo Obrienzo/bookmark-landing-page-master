@@ -21,7 +21,7 @@ function Button({ variant, active, selected, children, isWide=false, isForm=fals
         );
     } else if (variant === 'red') {
         return (
-            <button className={`bg-red border-2 border-red rounded-sm text-white hover:text-red shadow-zinc-400 shadow-2xs hover:shadow-2xl py-1 px-4 hover:bg-transparent hover:border-red cursor-pointer font-normal ${isWide ? 'w-full md:w-fit' : 'w-fit'} ${isForm ? 'hover:text-white py-2.5' : 'text-xs'}`} onClick={onClick}>
+            <button className={`bg-red border-2 border-red rounded-sm text-white hover:text-red shadow-zinc-400 shadow-2xs hover:shadow-2xl py-1 px-4 hover:bg-transparent hover:border-red cursor-pointer font-normal ${isWide ? 'w-full md:w-fit' : 'w-fit'} ${isForm ? 'hover:text-red hover:bg-white py-2.5' : 'text-xs'}`} onClick={onClick}>
                 {children}
             </button>
         );

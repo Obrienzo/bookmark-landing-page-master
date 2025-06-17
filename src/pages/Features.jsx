@@ -7,7 +7,7 @@ function Features({ feature, handleDisplay, selected, handleSelection }) {
         <section className="py-20 md:py-40 flex justify-center items-center relative">
             <div className="p-5 max-w-5xl">
                 <div className="text-center max-w-2xl mx-auto"> 
-                    <h2 className="text-3xl mb-5 font-bold">Features</h2>
+                    <h2 className="text-3xl mb-5 font-medium">Features</h2>
                     <p className="text-zinc-400">
                         Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
                     </p>
@@ -72,7 +72,7 @@ function Features({ feature, handleDisplay, selected, handleSelection }) {
                             <div className="w-3/4 md:w-2/4 h-1/5 sm:h-3/12 md:h-1/3 absolute bg-[#5368df] -z-0 bottom-64 sm:bottom-52 md:bottom-30 -left-2 md:-left-30 rounded-r-full"></div>
                         </div>
                         <div className="mt-12 text-center md:text-start">
-                            <h4 className="mb-6 text-2xl font-semibold">
+                            <h4 className="mb-6 text-2xl font-medium">
                                 {feature.title}
                             </h4>
                             <p className="text-zinc-400">
