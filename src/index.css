@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: Rubik;
+    src: url('/src/assets/Rubik/Rubik-VariableFont_wght.ttf') format('truetype');
+}
+
+
+@theme {
+    --color-red: hsl(0, 94%, 66%);
+    --color-blueDark: hsl(229, 31%, 21%);
+    --color-grey: hsl(0, 0%, 97%);
+    --color-blueDarker: hsl(229, 31%, 21%);
+    --color-buttonBlue: rgb(84 103 219);
+    --font-rubik: "Rubik", "sans-serif";
+}
+
+
+@media screen and (min-width: 1024px) {
+    .extensions article:nth-child(2) {
+    margin-top: 40px;
+}
+
+    .extensions article:nth-child(3) {
+        margin-top: 70px;
+    }
+}
