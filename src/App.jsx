@@ -42,7 +42,7 @@ function App() {
     console.log(dropdown);
   }
 
-  const changeDisplay = (number) => {
+  const handleDisplay = (number) => {
     setFeature(featuresList[number]);
   };
 
@@ -74,7 +74,7 @@ function App() {
         <HeroPage />
         <Features
           feature={feature}
-          handleDisplay={changeDisplay}
+          handleDisplay={handleDisplay}
           selected={selected}
           handleSelection={handleSelection}
         />
